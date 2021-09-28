@@ -1,0 +1,8 @@
+name: 'PR URL'
+description: 'get the PR that triggered the action'
+outputs:
+  url:
+    description: 'PR URL'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
