@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+#pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
 
-echo "::set-output name=url::$pull_number"
+echo "::set-output name=url::testUrl"
