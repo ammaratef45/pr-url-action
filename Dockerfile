@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN sudo apt-get install jq
+RUN apt-get install jq
 
 COPY entrypoint.sh /entrypoint.sh
 
