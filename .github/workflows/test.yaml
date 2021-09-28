@@ -1,4 +1,4 @@
-name: test
+name: getPrUrl
 
 on: [pull_request]
 
