@@ -1,4 +1,4 @@
-name: test
+name: getPrUrl
 
 on: [pull_request]
 
@@ -6,7 +6,11 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: getPrUrl
         id: pr-url
         uses: ./
+      - name: display
+        run: echo ${{ steps.pr-url.outputs.url }}
   
