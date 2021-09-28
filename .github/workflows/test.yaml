@@ -12,5 +12,5 @@ jobs:
         id: pr-url
         uses: ./
       - name: display
-        run: echo ${{ steps.pr-url.output.url }}
+        run: echo ${{ steps.pr-url.outputs.url }}
   
